@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>과제</title>
+</head>
+<body>
+
+    <form name="form" method="post" action="/result">
+        <div style="padding:10px;">
+            <table>
+                <tr>
+                    <td>URL </td>
+                    <td><input type="text" name="parsingUrl" style="width:300px;"/> </td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>
+                        <select name="parsingType">
+                            <option value="tag">태그 제거</option>
+                            <option value="text">텍스트</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>출력묶음</td>
+                    <td>
+                        <input type="number" name="divideCount" style="width:100px;"/> </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input type="submit" value="출력"/>
+
+    </form>
+
+</body>
+</html>
